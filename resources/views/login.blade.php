@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+
+<body>
+<h1>Login Service Computer</h1>
+    <form method='post' action='/homepage'>
+        @csrf
+        <label for="username">Username:</label>
+        <input type="text" name="u" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="p" required>
+        <br><br>
+        <button type="submit">Login</button>
+
+        <button> <a href="/register">Register</button>
+
+</body>
+</html>
