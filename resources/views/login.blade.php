@@ -10,7 +10,7 @@
 
 <body>
 <h1>Login Service Computer</h1>
-    <form method='post' action='/homepage'>
+    <form method='post' action='/login'>
         @csrf
         <label for="username">Username:</label>
         <input type="text" name="u" required>
@@ -22,6 +22,7 @@
         <button type="submit">Login</button>
 
         <button> <a href="/register">Register</button>
+
 
 </body>
 </html>

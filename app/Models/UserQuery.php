@@ -38,4 +38,17 @@ class UserQuery extends Model
             ->where($condition)
             ->first();
     }
+
+public function tampil($table) {
+    return DB::table($table)->get();
+}
+
+public function tampilfilter($table, $tgl_awal, $tgl_akhir) {
+    return DB::table($table)
+        ->whereBetween('created_at', [
+            $tgl_awal . ' 00:00:00',
+            $tgl_akhir . ' 23:59:59'
+        ])
+        ->get();
+}
 }
